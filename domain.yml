@@ -1,0 +1,51 @@
+intents:
+- greeting
+- goodbye
+- get_horoscope
+- subscription
+- dob_intent
+- mood_unhappy
+- affirm
+- mood_great
+- deny
+- greet
+entities:
+- subscribe
+- horoscope_sign
+- DD
+- MM
+slots:
+  DD:
+    type: text
+  MM:
+    type: text
+  horoscope_sign:
+    type: text
+  subscribe:
+    type: bool
+templates:
+  utter_greet:
+  - text: Hello! What can I do for you?
+  utter_goodbye:
+  - text: Bye
+  utter_ask_horoscope_sign:
+  - text: What is your horoscope sign?
+  utter_ask_dob:
+  - text: What is your DOB in DD-MM format?
+  utter_subscribe:
+  - text: Do you want to subscribe for daily updates?
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+actions:
+- utter_greet
+- utter_goodbye
+- utter_ask_horoscope_sign
+- utter_ask_dob
+- utter_subscribe
+- utter_get_todays_horoscope
+- subscribe_user
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- action_get_todays_horoscope
