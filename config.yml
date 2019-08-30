@@ -1,6 +1,6 @@
 language: "en"
 
-pipeline: "supervised_embeddings"
+pipeline: "pretrained_embeddings_spacy pipeline"
 
 # Configuration for Rasa Core.
 # https://rasa.com/docs/rasa/core/policies/
