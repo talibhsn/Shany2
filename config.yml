@@ -6,5 +6,5 @@ pipeline: "pretrained_embeddings_spacy pipeline"
 # https://rasa.com/docs/rasa/core/policies/
 policies:
   - name: MemoizationPolicy
-  - name: KerasPolicy
+  - name: KerasPolicy # Please comment out when your assistent not following the path defined in stories.md
   - name: MappingPolicy
